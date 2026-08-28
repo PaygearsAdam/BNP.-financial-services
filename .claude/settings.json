@@ -1,15 +1,21 @@
 {
   "permissions": {
-    "defaultMode": "auto",
+    "defaultMode": "default",
     "allow": [
-      "WebFetch",
-      "WebSearch"
+      "Bash(git status)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(npm test *)",
+      "Bash(npm run *)"
+    ],
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ],
     "deny": [
       "Bash(rm -rf *)",
       "Bash(sudo *)",
       "Bash(git push --force*)",
-      "Bash(git push -f*)",
       "Read(.env)",
       "Read(**/.env)",
       "Read(**/secrets/**)",
