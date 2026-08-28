@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "defaultMode": "auto",
+    "allow": [
+      "WebFetch",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(sudo *)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Read(.env)",
+      "Read(**/.env)",
+      "Read(**/secrets/**)",
+      "Read(~/.ssh/**)"
+    ]
+  }
+}
